@@ -1,7 +1,5 @@
-<<<<<<< HEAD
+
 # eVital_practical_task
-=======
-# kuldeep_practical
 
 A new Flutter project.
 
