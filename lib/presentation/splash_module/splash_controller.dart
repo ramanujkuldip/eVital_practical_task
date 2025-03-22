@@ -41,11 +41,11 @@ class SplashController extends GetxController
 
   navigateTo() {
     print("isLoggedIn-> ${Injector.isLoggedIn}");
-    if (Injector.isLoggedIn) {
-      Utils.transitionWithOffAll(HomeView());
-    } else {
+    // if (Injector.isLoggedIn) {
+    //   Utils.transitionWithOffAll(HomeView());
+    // } else {
       Utils.transitionWithOffAll(LoginView());
-    }
+    // }
   }
 
   @override

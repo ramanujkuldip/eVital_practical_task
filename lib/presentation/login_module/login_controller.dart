@@ -13,12 +13,8 @@ class LoginController extends GetxController {
   String password = "eVital@12";
   bool isShowPassword = false;
   final AppLinks _appLinks = AppLinks();
-  TextEditingController phoneNumberController = TextEditingController(
-    text: "9033006262",
-  );
-  TextEditingController passwordController = TextEditingController(
-    text: "eVital@12",
-  );
+  TextEditingController phoneNumberController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
   var utmSource = "".obs;
   var utmMedium = "".obs;
   var utmCampaign = "".obs;
@@ -92,7 +88,7 @@ class LoginController extends GetxController {
     utmSource.value = uri.queryParameters['utm_source'] ?? "";
     utmMedium.value = uri.queryParameters['utm_medium'] ?? "";
     utmCampaign.value = uri.queryParameters['utm_campaign'] ?? "";
-
+    update();
     print("UTM Source: ${utmSource.value}");
     print("UTM Medium: ${utmMedium.value}");
     print("UTM Campaign: ${utmCampaign.value}");
